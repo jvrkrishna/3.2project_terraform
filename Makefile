@@ -4,4 +4,4 @@ dev:
 	@terraform apply -auto-approve -var-file=env-dev/main.tfvars
 
 destroy:
-	@terraform apply -auto-approve -var-file=env-dev/main.tfvars
+	@terraform destroy -auto-approve -var-file=env-dev/main.tfvars
