@@ -4,4 +4,5 @@ module "instances" {
   source = "git::https://github.com/jvrkrishna/project_module.git"
   component = each.key
   env = var.env
+  tags = each.value["tags"]
 }
